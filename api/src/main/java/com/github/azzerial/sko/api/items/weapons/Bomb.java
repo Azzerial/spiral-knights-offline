@@ -16,16 +16,19 @@
 
 package com.github.azzerial.sko.api.items.weapons;
 
+import com.github.azzerial.sko.api.items.components.StarLevel;
+
 public enum Bomb implements Weapon {
     ;
 
     private final String name;
     private final String description;
-    private final byte starLevel;
+    private final StarLevel starLevel;
+
 
     /* Constructors */
 
-    Bomb(String name, String description, byte starLevel) {
+    Bomb(String name, String description, StarLevel starLevel) {
         this.name = name;
         this.description = description;
         this.starLevel = starLevel;
@@ -44,7 +47,7 @@ public enum Bomb implements Weapon {
     }
 
     @Override
-    public int getStarLevel() {
+    public StarLevel getStarLevel() {
         return starLevel;
     }
 }

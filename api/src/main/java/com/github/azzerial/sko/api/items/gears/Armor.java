@@ -16,16 +16,18 @@
 
 package com.github.azzerial.sko.api.items.gears;
 
+import com.github.azzerial.sko.api.items.components.StarLevel;
+
 public enum Armor implements Gear {
     ;
 
     private final String name;
     private final String description;
-    private final byte starLevel;
+    private final StarLevel starLevel;
 
     /* Constructors */
 
-    Armor(String name, String description, byte starLevel) {
+    Armor(String name, String description, StarLevel starLevel) {
         this.name = name;
         this.description = description;
         this.starLevel = starLevel;
@@ -44,7 +46,7 @@ public enum Armor implements Gear {
     }
 
     @Override
-    public int getStarLevel() {
+    public StarLevel getStarLevel() {
         return starLevel;
     }
 }

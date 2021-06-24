@@ -14,39 +14,33 @@
  * limitations under the License.
  */
 
-package com.github.azzerial.sko.api.items.gears;
+package com.github.azzerial.sko.api.items.components;
 
-import com.github.azzerial.sko.api.items.components.StarLevel;
+public enum StarLevel {
+    ZERO_STAR((byte) 0, "☆☆☆☆☆"),
+    ONE_STAR((byte) 1, "★☆☆☆☆"),
+    TWO_STAR((byte) 2, "★★☆☆☆"),
+    THREE_STAR((byte) 3, "★★★☆☆"),
+    FOUR_STAR((byte) 4, "★★★★☆"),
+    FIVE_STAR((byte) 5, "★★★★★");
 
-public enum Shield implements Gear {
-    ;
-
-    private final String name;
-    private final String description;
-    private final StarLevel starLevel;
+    private final byte level;
+    private final String label;
 
     /* Constructors */
 
-    Shield(String name, String description, StarLevel starLevel) {
-        this.name = name;
-        this.description = description;
-        this.starLevel = starLevel;
+    StarLevel(byte level, String label) {
+        this.level = level;
+        this.label = label;
     }
 
     /* Getters & Setters */
 
-    @Override
-    public String getName() {
-        return name;
+    public int getLevel() {
+        return level;
     }
 
-    @Override
-    public String getDescription() {
-        return description;
-    }
-
-    @Override
-    public StarLevel getStarLevel() {
-        return starLevel;
+    public String getDisplayLevel() {
+        return label;
     }
 }

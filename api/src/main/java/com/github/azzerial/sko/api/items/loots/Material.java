@@ -17,17 +17,18 @@
 package com.github.azzerial.sko.api.items.loots;
 
 import com.github.azzerial.sko.api.items.Item;
+import com.github.azzerial.sko.api.items.components.StarLevel;
 
 public enum Material implements Item {
     ;
 
     private final String name;
     private final String description;
-    private final byte starLevel;
+    private final StarLevel starLevel;
 
     /* Constructors */
 
-    Material(String name, String description, byte starLevel) {
+    Material(String name, String description, StarLevel starLevel) {
         this.name = name;
         this.description = description;
         this.starLevel = starLevel;
@@ -46,7 +47,7 @@ public enum Material implements Item {
     }
 
     @Override
-    public int getStarLevel() {
+    public StarLevel getStarLevel() {
         return starLevel;
     }
 }
