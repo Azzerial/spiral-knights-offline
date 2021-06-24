@@ -20,6 +20,16 @@ import com.github.azzerial.sko.api.items.Item;
 import com.github.azzerial.sko.api.items.components.StarLevel;
 
 public enum Rarity implements Item {
+    // Evo Catalyst
+    // Fire Crystal
+    // Orb of Alchemy
+    FLAWED_ORB_OF_ALCHEMY("Flawed Orb of Alchemy", "A rare, encapsulated element used in alchemical transmutation. Though flawed, this orb is still useful in crafting low-powered items.", StarLevel.ONE_STAR),
+    SIMPLE_ORB_OF_ALCHEMY("Simple Orb of Alchemy", "A rare, encapsulated element used in alchemical transmutation. While unrefined, this orb can be used to craft more powerful items.", StarLevel.TWO_STAR),
+    ADVANCED_ORB_OF_ALCHEMY("Advanced Orb of Alchemy", "A rare, encapsulated element used in alchemical transmutation. This orb is exceptional and can be used to craft very powerful items.", StarLevel.THREE_STAR),
+    ELITE_ORB_OF_ALCHEMY("Elite Orb of Alchemy", "A rare, encapsulated element used in alchemical transmutation. Orbs like these are used by elite knights to craft items of exceptional quality and power.", StarLevel.FOUR_STAR),
+    ETERNAL_ORB_OF_ALCHEMY("Eternal Orb of Alchemy", "A rare, encapsulated element used in alchemical transmutation. This orb is prized by the most powerful knights and is used to craft items of extraordinary power.", StarLevel.FIVE_STAR)
+    // Spark of Life
+    // Golden Slime Coin
     ;
 
     private final String name;
