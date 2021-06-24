@@ -16,6 +16,7 @@
 
 package com.github.azzerial.sko.api.items.gears;
 
+import com.github.azzerial.sko.api.items.components.Recipe;
 import com.github.azzerial.sko.api.items.components.StarLevel;
 
 public enum Helmet implements Gear {
@@ -48,5 +49,10 @@ public enum Helmet implements Gear {
     @Override
     public StarLevel getStarLevel() {
         return starLevel;
+    }
+
+    @Override
+    public Recipe getRecipe() {
+        return null;
     }
 }

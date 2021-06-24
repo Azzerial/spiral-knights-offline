@@ -16,5 +16,9 @@
 
 package com.github.azzerial.sko.api.items;
 
+import com.github.azzerial.sko.api.items.components.Recipe;
+
 public interface Equipment extends Item {
+
+    Recipe getRecipe();
 }

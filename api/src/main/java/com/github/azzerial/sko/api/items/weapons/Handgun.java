@@ -16,6 +16,7 @@
 
 package com.github.azzerial.sko.api.items.weapons;
 
+import com.github.azzerial.sko.api.items.components.Recipe;
 import com.github.azzerial.sko.api.items.components.StarLevel;
 
 public enum Handgun implements Weapon {
@@ -48,5 +49,10 @@ public enum Handgun implements Weapon {
     @Override
     public StarLevel getStarLevel() {
         return starLevel;
+    }
+
+    @Override
+    public Recipe getRecipe() {
+        return null;
     }
 }
