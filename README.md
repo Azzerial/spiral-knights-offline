@@ -8,18 +8,20 @@
 </div>
 
 <p align="center">
+  <!--
   <a href="https://jitpack.io/#azzerial/spiral-knights-offline">
-    <img src="https://img.shields.io/jitpack/v/github/azzerial/spiral-knights-offline?color=green&label=JitPack">
+    <img src="https://img.shields.io/jitpack/v/github/Azzerial/spiral-knights-offline?color=green&label=JitPack">
   </a>
+  -->
   <a href="https://github.com/Azzerial/spiral-knights-offline/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/azzerial/spiral-knights-offline?color=lightgray&label=License&logo=apache">
+    <img src="https://img.shields.io/github/license/Azzerial/spiral-knights-offline?color=lightgray&label=License&logo=apache">
   </a>
 </p>
 
 <p align="center">
   <a href="#features">Features</a> •
   <a href="#how-to-use">How To Use</a> •
-  <a href="#installation">Installation</a> •
+  <!--<a href="#installation">Installation</a> •-->
   <a href="#license">License</a>
 </p>
 
@@ -46,6 +48,7 @@ public class Example {
 
 *For more examples and usage, please refer to the [wiki](wiki).*
 
+<!--
 ## Installation
 
 This project uses [Jitpack](https://jitpack.io/#azzerial/spiral-knights-offline).
@@ -79,6 +82,7 @@ dependencies {
     <version>1.0</version>
 </dependency>
 ```
+-->
 
 ## License
 
