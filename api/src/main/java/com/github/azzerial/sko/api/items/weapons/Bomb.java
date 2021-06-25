@@ -16,6 +16,7 @@
 
 package com.github.azzerial.sko.api.items.weapons;
 
+import com.github.azzerial.sko.api.items.components.AlchemyPath;
 import com.github.azzerial.sko.api.items.components.Recipe;
 import com.github.azzerial.sko.api.items.components.StarLevel;
 
@@ -25,7 +26,6 @@ public enum Bomb implements Weapon {
     private final String name;
     private final String description;
     private final StarLevel starLevel;
-
 
     /* Constructors */
 
@@ -54,6 +54,11 @@ public enum Bomb implements Weapon {
 
     @Override
     public Recipe getRecipe() {
+        return null;
+    }
+
+    @Override
+    public AlchemyPath getAlchemyPath() {
         return null;
     }
 }

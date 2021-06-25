@@ -16,6 +16,7 @@
 
 package com.github.azzerial.sko.api.items.gears;
 
+import com.github.azzerial.sko.api.items.components.AlchemyPath;
 import com.github.azzerial.sko.api.items.components.Recipe;
 import com.github.azzerial.sko.api.items.components.StarLevel;
 
@@ -53,6 +54,11 @@ public enum Armor implements Gear {
 
     @Override
     public Recipe getRecipe() {
+        return null;
+    }
+
+    @Override
+    public AlchemyPath getAlchemyPath() {
         return null;
     }
 }
