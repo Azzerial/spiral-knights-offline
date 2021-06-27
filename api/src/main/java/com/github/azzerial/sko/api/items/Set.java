@@ -16,5 +16,32 @@
 
 package com.github.azzerial.sko.api.items;
 
+import com.github.azzerial.sko.api.items.components.StarLevel;
+
+import java.util.Arrays;
+
 public enum Set {
+    ;
+
+    private final Equipment[] equipments;
+
+    /* Constructors */
+
+    Set(Equipment[] equipments) {
+        this.equipments = equipments;
+    }
+
+    /* Getters & Setters */
+
+    public boolean hasEquipment(Equipment equipment) {
+        return Arrays.asList(equipments).contains(equipment);
+    }
+
+    public Equipment[] getEquipments() {
+        return equipments;
+    }
+
+    public StarLevel getStarLevel() {
+        return equipments.length == 0 ? null : equipments[0].getStarLevel();
+    }
 }
