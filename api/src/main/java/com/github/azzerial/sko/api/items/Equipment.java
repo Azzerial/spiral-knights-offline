@@ -16,6 +16,7 @@
 
 package com.github.azzerial.sko.api.items;
 
+import com.github.azzerial.sko.api.items.abilities.Ability;
 import com.github.azzerial.sko.api.items.components.AlchemyPath;
 import com.github.azzerial.sko.api.items.components.Recipe;
 
@@ -24,4 +25,6 @@ public interface Equipment extends Item {
     Recipe getRecipe();
 
     AlchemyPath getAlchemyPath();
+
+    Ability[] getAbilities();
 }

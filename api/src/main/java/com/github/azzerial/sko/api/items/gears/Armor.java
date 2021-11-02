@@ -16,9 +16,13 @@
 
 package com.github.azzerial.sko.api.items.gears;
 
+import com.github.azzerial.sko.api.items.Set;
+import com.github.azzerial.sko.api.items.abilities.Ability;
 import com.github.azzerial.sko.api.items.components.AlchemyPath;
 import com.github.azzerial.sko.api.items.components.Recipe;
 import com.github.azzerial.sko.api.items.components.StarLevel;
+import com.github.azzerial.sko.api.items.gears.components.StatusResistance;
+import com.github.azzerial.sko.api.items.gears.components.DefenseStat;
 
 public enum Armor implements Gear {
     ;
@@ -59,6 +63,26 @@ public enum Armor implements Gear {
 
     @Override
     public AlchemyPath getAlchemyPath() {
+        return null;
+    }
+
+    @Override
+    public Ability[] getAbilities() {
+        return new Ability[0];
+    }
+
+    @Override
+    public DefenseStat[] getDefenseStats() {
+        return new DefenseStat[0];
+    }
+
+    @Override
+    public StatusResistance[] getStatusResistances() {
+        return new StatusResistance[0];
+    }
+
+    @Override
+    public Set getSet() {
         return null;
     }
 }

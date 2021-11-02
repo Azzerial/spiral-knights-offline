@@ -16,9 +16,12 @@
 
 package com.github.azzerial.sko.api.items.weapons;
 
+import com.github.azzerial.sko.api.items.abilities.Ability;
 import com.github.azzerial.sko.api.items.components.AlchemyPath;
+import com.github.azzerial.sko.api.items.components.CombatStyle;
 import com.github.azzerial.sko.api.items.components.Recipe;
 import com.github.azzerial.sko.api.items.components.StarLevel;
+import com.github.azzerial.sko.api.items.weapons.components.DamageStat;
 
 public enum Sword implements Weapon {
     ;
@@ -60,5 +63,25 @@ public enum Sword implements Weapon {
     @Override
     public AlchemyPath getAlchemyPath() {
         return null;
+    }
+
+    @Override
+    public Ability[] getAbilities() {
+        return new Ability[0];
+    }
+
+    @Override
+    public CombatStyle getCombatStyle() {
+        return null;
+    }
+
+    @Override
+    public DamageStat[] getDamageStats() {
+        return new DamageStat[0];
+    }
+
+    @Override
+    public int getAttackSpeed() {
+        return 0;
     }
 }
