@@ -18,16 +18,17 @@ package com.github.azzerial.sko.api.items.abilities;
 
 import com.github.azzerial.sko.api.items.abilities.components.AbilityLevel;
 import com.github.azzerial.sko.api.items.abilities.components.AbilityType;
+import com.github.azzerial.sko.api.items.abilities.components.DefensiveAbilityLevel;
 import com.github.azzerial.sko.api.items.abilities.components.StatusType;
 
 public final class StatusResistance implements Ability {
 
-    private final AbilityLevel abilityLevel;
+    private final DefensiveAbilityLevel abilityLevel;
     private final StatusType statusType;
 
     /* Constructors */
 
-    public StatusResistance(AbilityLevel abilityLevel, StatusType statusType) {
+    public StatusResistance(DefensiveAbilityLevel abilityLevel, StatusType statusType) {
         this.abilityLevel = abilityLevel;
         this.statusType = statusType;
     }

@@ -16,21 +16,18 @@
 
 package com.github.azzerial.sko.api.items.abilities;
 
-import com.github.azzerial.sko.api.items.abilities.components.AbilityLevel;
-import com.github.azzerial.sko.api.items.abilities.components.AbilityType;
-import com.github.azzerial.sko.api.items.abilities.components.MonsterType;
-import com.github.azzerial.sko.api.items.abilities.components.WeaponType;
+import com.github.azzerial.sko.api.items.abilities.components.*;
 
 public final class DamageModifier implements Ability {
 
-    private final AbilityLevel abilityLevel;
+    private final OffensiveAbilityLevel abilityLevel;
     private final WeaponType weaponType;
     private final MonsterType monsterType;
     private final boolean bonus;
 
     /* Constructors */
 
-    public DamageModifier(AbilityLevel abilityLevel, WeaponType weaponType, MonsterType monsterType, boolean bonus) {
+    public DamageModifier(OffensiveAbilityLevel abilityLevel, WeaponType weaponType, MonsterType monsterType, boolean bonus) {
         this.abilityLevel = abilityLevel;
         this.weaponType = weaponType;
         this.monsterType = monsterType;

@@ -18,17 +18,18 @@ package com.github.azzerial.sko.api.items.abilities;
 
 import com.github.azzerial.sko.api.items.abilities.components.AbilityLevel;
 import com.github.azzerial.sko.api.items.abilities.components.AbilityType;
+import com.github.azzerial.sko.api.items.abilities.components.OffensiveAbilityLevel;
 import com.github.azzerial.sko.api.items.abilities.components.WeaponType;
 
 public final class AttackSpeedModifier implements Ability {
 
-    private final AbilityLevel abilityLevel;
+    private final OffensiveAbilityLevel abilityLevel;
     private final WeaponType weaponType;
     private final boolean increase;
 
     /* Constructors */
 
-    public AttackSpeedModifier(AbilityLevel abilityLevel, WeaponType weaponType, boolean increase) {
+    public AttackSpeedModifier(OffensiveAbilityLevel abilityLevel, WeaponType weaponType, boolean increase) {
         this.abilityLevel = abilityLevel;
         this.weaponType = weaponType;
         this.increase = increase;

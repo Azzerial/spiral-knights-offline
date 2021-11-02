@@ -18,16 +18,17 @@ package com.github.azzerial.sko.api.items.abilities;
 
 import com.github.azzerial.sko.api.items.abilities.components.AbilityLevel;
 import com.github.azzerial.sko.api.items.abilities.components.AbilityType;
+import com.github.azzerial.sko.api.items.abilities.components.OffensiveAbilityLevel;
 import com.github.azzerial.sko.api.items.abilities.components.WeaponType;
 
 public final class ChargeTimeReduction implements Ability {
 
-    private final AbilityLevel abilityLevel;
+    private final OffensiveAbilityLevel abilityLevel;
     private final WeaponType weaponType;
 
     /* Constructors */
 
-    public ChargeTimeReduction(AbilityLevel abilityLevel, WeaponType weaponType) {
+    public ChargeTimeReduction(OffensiveAbilityLevel abilityLevel, WeaponType weaponType) {
         this.abilityLevel = abilityLevel;
         this.weaponType = weaponType;
     }

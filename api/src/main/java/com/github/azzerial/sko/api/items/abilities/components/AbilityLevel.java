@@ -16,31 +16,11 @@
 
 package com.github.azzerial.sko.api.items.abilities.components;
 
-public enum AbilityLevel {
-    LOW((byte) 1, "Low"),
-    MEDIUM((byte) 2, "Medium"),
-    HIGH((byte) 3, "High"),
-    VERY_HIGH((byte) 4, "Very High"),
-    ULTRA((byte) 5, "Ultra"),
-    MAXIMUM((byte) 6, "Maximum!");
+public interface AbilityLevel {
 
-    private final byte level;
-    private final String label;
+    int getLevel();
 
-    /* Constructors */
+    String getDisplayLevel();
 
-    AbilityLevel(byte level, String label) {
-        this.level = level;
-        this.label = label;
-    }
-
-    /* Getters & Setters */
-
-    public int getLevel() {
-        return level;
-    }
-
-    public String getDisplayLevel() {
-        return label;
-    }
+    boolean isAcquirableAsUniqueVariant();
 }

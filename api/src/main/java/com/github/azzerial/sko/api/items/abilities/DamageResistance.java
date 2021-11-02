@@ -19,15 +19,16 @@ package com.github.azzerial.sko.api.items.abilities;
 import com.github.azzerial.sko.api.items.abilities.components.AbilityLevel;
 import com.github.azzerial.sko.api.items.abilities.components.AbilityType;
 import com.github.azzerial.sko.api.items.abilities.components.DamageType;
+import com.github.azzerial.sko.api.items.abilities.components.DefensiveAbilityLevel;
 
 public final class DamageResistance implements Ability {
 
-    private final AbilityLevel abilityLevel;
+    private final DefensiveAbilityLevel abilityLevel;
     private final DamageType damageType;
 
     /* Constructors */
 
-    public DamageResistance(AbilityLevel abilityLevel, DamageType damageType) {
+    public DamageResistance(DefensiveAbilityLevel abilityLevel, DamageType damageType) {
         this.abilityLevel = abilityLevel;
         this.damageType = damageType;
     }
