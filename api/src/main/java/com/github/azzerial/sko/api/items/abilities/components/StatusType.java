@@ -20,6 +20,7 @@ public enum StatusType {
     CURSE("Curse"),
     FIRE("Fire"),
     FREEZE("Freeze"),
+    POISON("Poison"),
     SHOCK("Shock"),
     STUN("Stun"),
     SLEEP("Sleep");
