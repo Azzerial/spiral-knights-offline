@@ -86,10 +86,11 @@ dependencies {
 
 ## License
 
-This project is licensed under the [Apache License 2.0](LICENSE) © 2021 [Robin Mercier](https://github.com/azzerial/).
+This project is licensed under the [Apache License 2.0](LICENSE) © 2021 [Robin Mercier](https://github.com/Azzerial).
 
 ---
 
 <p align="center">
-  Spiral Knights Offline by <a href="https://github.com/azzerial">@Azzerial</a>
+  Spiral Knights Offline by <a href="https://github.com/Azzerial">Robin Mercier</a> •
+  <a href="https://azzerial.net">azzerial.net</a>
 </p>

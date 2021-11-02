@@ -31,7 +31,7 @@ dependencies {
 }
 
 java {
-    mainClassName = 'com.github.azzerial.sko.bot.Main'
+    mainClassName = 'net.azzerial.sko.bot.Main'
 }
 
 tasks.named('run') {
